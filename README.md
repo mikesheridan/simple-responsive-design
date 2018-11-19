@@ -1,4 +1,4 @@
-## Simple UI Test Site - Channel Islands Surf Mock Site - Mike Sheridan
+## Simple UI Test Site - CI Surf Mock Site - Mike Sheridan
 
 This is a a simple, generic brochure style site mockup of a surf site.  The purpose is to exhibit general design and responsive layout.
 
