@@ -1,0 +1,270 @@
+/* Resets 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+* {
+  box-sizing: inherit;
+}
+body {
+  box-sizing: border-box;
+}
+
+/* Shared
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button {
+  border-radius: 10rem;
+}
+
+/* Header 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3.5rem;
+  z-index: 100;
+  background-color: rgb(51, 195, 239, 0.5);
+  color: #fff;
+  padding: 0.7rem;
+  font-weight: 600;
+}
+.nav_logo {
+  float: left;
+}
+.nav_links {
+  float: right;
+}
+.nav_links_ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav_link {
+  float: left;
+}
+
+.nav_link a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 0 1.6rem;
+  text-decoration: none;
+}
+.header_logo {
+  vertical-align: middle;
+  padding-right: 0.5rem;
+}
+
+/* Sections
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section {
+  padding: 3rem 0 2.5rem;
+  text-align: center;
+}
+.section-heading,
+.section-description {
+  margin-bottom: 1.2rem;
+}
+
+/* Hero
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.hero {
+  padding-top: 1rem;
+  padding-bottom: 9rem;
+}
+.boards {
+  position: relative;
+}
+.board {
+  position: relative;
+  max-width: 80%;
+  margin: 3rem auto -12rem;
+}
+.board + .board {
+  display: none;
+}
+
+/* Values
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.values {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(19, 106, 132, 0.8),
+      rgba(22, 169, 125, 0.8)
+    ),
+    url("../images/shaping_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding-bottom: 5rem;
+}
+.value-multiplier {
+  margin-bottom: 0.5rem;
+  color: #11dfc7;
+}
+.value-heading {
+  margin-bottom: 0.3rem;
+}
+.value-description {
+  opacity: 0.8;
+  font-weight: 300;
+}
+
+/* Help
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.get-help {
+  border-bottom: 1px solid #ddd;
+}
+
+/* Categories
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.categories {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(19, 106, 132, 0.8),
+      rgba(22, 169, 125, 0.8)
+    ),
+    url("../images/shaping_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+.categories .section-description {
+  margin-bottom: 4rem;
+}
+
+/* Video
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.video {
+  border-bottom: 1px solid #ddd;
+}
+.video_frame {
+  width: 100%;
+  height: 35rem;
+}
+
+/* Footer 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.footer {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(19, 106, 132, 0.8),
+    rgba(22, 169, 125, 0.8)
+  );
+  width: 100%;
+  height: 3.5rem;
+  background-color: rgb(51, 195, 239, 0.5);
+  color: #fff;
+  text-align: center;
+  padding: 0.7rem;
+  font-weight: 600;
+}
+
+/* Animations 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@keyframes moveInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Bigger than 550 */
+@media (min-width: 550px) {
+  .section {
+    padding: 6rem 0 6.5rem;
+  }
+  .hero {
+    padding: 2rem 0 27rem;
+    text-align: left;
+    height: 16.5rem;
+  }
+  .board {
+    position: absolute;
+    top: -13rem;
+    right: 3rem;
+    max-height: 41.2rem;
+    z-index: 3;
+  }
+  .board + .board {
+    top: -12rem;
+    display: block;
+    max-width: 73.8%;
+    right: 0;
+    z-index: 2;
+    max-height: 38.8rem;
+  }
+  .hero-heading {
+    font-size: 1.7rem;
+  }
+  .hero_box {
+    margin: 0 40% 0 60%;
+  }
+}
+
+/* Bigger than 750 */
+@media (min-width: 750px) {
+  .hero-heading {
+    font-size: 2.2rem;
+  }
+  .section {
+    padding: 8rem 0 8.5rem;
+  }
+  .hero {
+    padding: 4rem 0 36rem;
+    height: 19rem;
+  }
+  .section-description {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .board {
+    top: -14rem;
+    right: 5rem;
+    max-height: 51rem;
+  }
+  .board + .board {
+    top: -12rem;
+    max-height: 47.2rem;
+  }
+  .categories {
+    padding: 15rem 0 8rem;
+  }
+  .hero_box {
+    margin: 0 40% 0 60%;
+  }
+}
+
+/* Bigger than 1000 */
+@media (min-width: 1000px) {
+  .section {
+    padding: 10rem 0 9.5rem;
+  }
+  .hero {
+    padding: 4rem 0 42rem 0;
+  }
+  .hero-heading {
+    font-size: 3rem;
+  }
+  .board {
+    top: -16rem;
+    max-height: 61.5rem;
+  }
+  .board + .board {
+    top: -14rem;
+    max-height: 57rem;
+  }
+  .hero_box {
+    margin: 0 40% 0 60%;
+  }
+}
